@@ -1,0 +1,21 @@
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.nav-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 2px solid var(--color-primary);
+    padding: 3px;
+    border-radius: 5px;
+}
+
