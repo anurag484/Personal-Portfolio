@@ -2,6 +2,7 @@ import React from 'react'
 import "./work.css"
 const Experience = () => {
   return (
+    <div className="container">
     <div className="experience" id='Experience'>
         <div className="achievement">
             <div className="circle">8+</div>
@@ -18,6 +19,7 @@ const Experience = () => {
             <span>Companies</span>
             <span>work</span>
         </div>
+    </div>
     </div>
   )
 }

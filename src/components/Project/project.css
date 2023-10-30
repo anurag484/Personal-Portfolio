@@ -12,12 +12,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid var(--color-black);
+    transition: all 3s ease-in-out;
 
 }
 
 .project_items:hover{
-    border-color: var(--color-primary-variant);
+    border:2px  dashed var(--color-primary);
     background: transparent;
+    box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-webkit-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-moz-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+}
+.project_items:hover img{
+    transition: all 0.3s ease-in-out;
+    scale: 1.1;
 }
 
 .project_items-image{

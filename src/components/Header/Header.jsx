@@ -12,9 +12,9 @@ const Header = () => {
     <div className=" container header">
       <div className="header-left">
         <div className="name">
-          <h1>
-            Hi! <b> Sameer</b>
-          </h1>
+          <span>
+            Hi! I'm  <b> Sameer</b>
+          </span>
           <b>I am a 
             {" "}
             <TypeAnimation
@@ -38,9 +38,9 @@ const Header = () => {
         </div>
         <CTA />
         <div className="i-icons">
-          <AiOutlineGithub style={{fontSize:"6rem",color:"var(--color-primary)"}}/>
-          <AiOutlineInstagram style={{fontSize:"6rem",color:"var(--color-primary)"}}/>
-          <AiOutlineLinkedin style={{fontSize:"6rem",color:"var(--color-primary)"}}/>
+          <AiOutlineGithub style={{color:"black"} } className="social-icon-hover"/>
+          <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" />
+          <AiOutlineLinkedin style={{color:"#0077b5"}} className="social-icon-hover" />
         </div>
       </div>
       <div className="header-right">

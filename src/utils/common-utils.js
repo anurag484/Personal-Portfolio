@@ -171,3 +171,33 @@ export const  projectsList=[
     },
 
 ]
+
+// testinmonail section
+
+export const testimonial_data=[
+    {
+        avatar:projectImg1,
+        name:"Sameer Khan",
+        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+    },
+    {
+        avatar:projectImg1,
+        name:"Suhail Khan",
+        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+    },
+    {
+        avatar:projectImg1,
+        name:"arbazr Khan",
+        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+    },
+    {
+        avatar:projectImg1,
+        name:"neha Khan",
+        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+    },
+    {
+        avatar:projectImg1,
+        name:"shaheen Khan",
+        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+    },
+]

@@ -6,16 +6,51 @@
 }
 
 .experience-container > div{
-    background: var(--color-bg-variant);
+    background: var(--color-white);
+    color: var(--color-black);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    border: 2px solid var(--color-black);
+    position: relative;
+    overflow: hidden;
+}
+.experience-container >div::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0 , 0.1);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
 }
 .experience-container >div:hover{
     background: transparent;
-    border-color: var(--color-bg-variant);
+    border: 3px dashed var(--color-primary);
     cursor: default;
+}
+.experience-container>div:hover::before{
+    height: 100%;
+}
+.experience-backend:hover .experience-content{
+    
+    scale: 1.1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-webkit-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-moz-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+}
+.experience-left:hover .experience-content{
+    scale: 1.1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-webkit-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-moz-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
 }
 .experience-container > div h3{
     text-align: center;
@@ -51,18 +86,27 @@
 .other-section-child{
     display: flex;
     gap: 1rem;
+    margin-top: 10px;
 }
 .other-section-child >div{
-    border: 2px solid red;
+    border: 2px solid var(--color-primary);
     width: fit-content;
     padding: 5px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+.other-section-child>div:hover{
+    transform: translateY(-10px);
+    box-shadow: -1px 15px 14px -7px rgba(0,0,0,0.8);
+-webkit-box-shadow: -1px 15px 14px -7px rgba(0,0,0,0.8);
+-moz-box-shadow: -1px 15px 14px -7px rgba(0,0,0,0.8);
 }
 .other-section:nth-child(3) img{
     width: 50px;
-
 }
 /* -------------------------MEDIA QUERIES (MEDIUM DIVICES)-------------------------  */
 @media screen and (max-width:1024px){
