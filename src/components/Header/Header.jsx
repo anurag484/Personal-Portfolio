@@ -9,15 +9,16 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className=" container header">
-      <div className="header-left">
+    <div className=" container header" id="Home">
+      <div className="header-left ">
         <div className="name">
           <span>
             Hi! I'm  <b> Sameer</b>
           </span>
           <b>I am a 
             {" "}
-            <TypeAnimation
+            MERN stack developer
+            {/* <TypeAnimation
               sequence={[
                 "MERN Stack Developer",
                 500,
@@ -29,7 +30,7 @@ const Header = () => {
               ]}
               style={{color:"#4e45de"}}
               repeat={Infinity}
-            />
+            /> */}
             </b>
           <span>
             I’m a software developer and here is my portfolio website.
@@ -49,13 +50,13 @@ const Header = () => {
         <div style={{ top: "-4%", left: "68%" }} className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=96&id=108784&format=png"} title1="MERN Stack" title2={"Developer"} />
         </div>
-        <div style={{ top: "18rem", left: "0rem" }} className="floating-div">
+        <div style={{ bottom: "10%", left: "10%" }} className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=160&id=gEUAVzkSqR4R&format=png"} title1="Web " title2={"Developer"} />
         </div>
-        <div style={{ top: "-4%", right: "68%" }} className="floating-div">
+        <div style={{ top: "10%", left: "10%" }} className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=160&id=Vra58PN2KmI5&format=png"} title1="Frontend" title2={"Developer"} />
         </div>
-        <div style={{ top: "18rem", right: "0rem" }} className="floating-div">
+        <div style={{ bottom: "10%", right: "0%" }} className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=96&id=hsPbhkOH4FMe&format=png"} title1="Backend Stack" title2={"Developer"} />
         </div>
         <div className="blur" style={{ background: "regb(238 210 255" }}></div>

@@ -18,7 +18,7 @@ import javaPng from "../../assets/img/javapng.png";
 import "./about.css";
 const About = () => {
   return (
-    <div className="container about">
+    <div className="container about" id="About">
       <h1 style={{ textAlign: "center" }}>About Me</h1>
       <div  class="skills-container ">
         <div class="skill-container-left">

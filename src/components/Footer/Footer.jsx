@@ -6,13 +6,12 @@ const Footer = () => {
     <footer className=''>
       <a href="#" className='footer_logo'>Sameer Khan</a>
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">testimonials</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
       <div className="footer_socials">
         <a href="https://facebook.com"><FiFacebook/></a>

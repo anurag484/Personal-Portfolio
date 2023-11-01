@@ -36,12 +36,14 @@
 
 }
 /* -------------------------MEDIA QUERIES (SMALL DIVICES)------------------------- */
-@media screen and (max-width:1024px){
+@media screen and (max-width:720px){
    .container.testimonials_container{
-    width: var(--container-width-sm);
+    width: 80%;
    }
-   .client_review{
-    width: var(--container-width-sm);
+}
+@media screen and (max-width:450px){
+   .container.testimonials_container{
+    width: 90%;
    }
 }
 

@@ -4,7 +4,7 @@ import { projectsList } from "../../utils/common-utils";
 import projectImg from "../../assets/img/hi.png"
 const Projects = () => {
   return (
-    <div className="container" id>
+    <div className="container" id="Projects">
       <h1 style={{textAlign:"center"}}>My Recents Projects</h1>
       <div className="project_container">
         {projectsList.map(({id,image,title,github,demo}) => (

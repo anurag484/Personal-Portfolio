@@ -23,7 +23,7 @@ const Contact = () => {
       e.target.reset();
   };
     return (
-    <div className='container'>
+    <div className='container' id='Contact'>
       <h1 style={{textAlign:"center"}}>Contact Me</h1>
       <div className="container contact_container">
         <div className="contact_options">

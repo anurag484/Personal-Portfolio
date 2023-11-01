@@ -46,6 +46,15 @@ nav a:hover::before{
 
 nav a.active::before{
     color: var(--color-bg);
-    width: 40
+    width: 40%;
 
+}
+@media screen and (max-width:450px) {
+    nav a span{
+        display: none;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    
 }
