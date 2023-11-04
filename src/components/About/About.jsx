@@ -1,4 +1,5 @@
-import React from "react";
+import {React,useContext} from "react";
+import { themeContext } from "../../context";
 import HtmlImg from "../../assets/img/htmlpng.png";
 import cssImg from "../../assets/img/csspng.png";
 import jsImg from "../../assets/img/jspng.png";
@@ -17,6 +18,8 @@ import javaPng from "../../assets/img/javapng.png";
 
 import "./about.css";
 const About = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="container about" id="About">
       <h1 style={{ textAlign: "center" }}>About Me</h1>
@@ -52,7 +55,7 @@ const About = () => {
           </div>
         </div>
         <div className="skill-container-right">
-          <div className="con">
+          <div className="con" style={{borderColor:darkMode?"var(--color-white)":""}} >
             <div className="icon">
               <div className="imgBox">
                 <img src={HtmlImg} alt="" />
@@ -87,7 +90,7 @@ const About = () => {
                 <div className="imgBox1">
                   <img src={nodePng} alt="" />
                 </div>
-                <div className="imgBox1">
+                <div className="imgBox1" >
                   <img src={mysqlPng} alt="" />
                 </div>
                 <div className="imgBox1">

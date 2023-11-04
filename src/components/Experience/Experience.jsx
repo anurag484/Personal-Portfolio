@@ -1,12 +1,17 @@
-import React from "react";
-import { BsPatchCheckFill } from "react-icons/bs";
+import {React,useContext} from "react";
+import { BsGear, BsPatchCheckFill } from "react-icons/bs";
 import {
   experienceDataFrontend,
   experienceDataBackend,
   experienceOtherData,
 } from "../../utils/common-utils";
 import "./experience.css";
+import { themeContext } from "../../context";
+import { useState } from "react";
+
 const Experience = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const levelHandle = (data) => {
     if (data == 1) {
       return "Advance";
@@ -18,13 +23,27 @@ const Experience = () => {
       return "Familiar";
     }
   };
+  const [isHover, setIsHover] = useState(false);
+
+   const handleMouseEnter = () => {
+      setIsHover(true);
+   };
+
+   const handleMouseLeave = () => {
+      setIsHover(false);
+   };
+  const boxStyle = {
+    
+    backgroundColor: isHover ? '' : '',
+    color: isHover ? 'green' : '',
+ };
   return (
-    <div className="container" id="Experience">
+    <div className="container" id="Experience" style={{background:darkMode?"var(--color-black)":""}}>
       <h1 style={{ textAlign: "center" }}>My Experience</h1>
-      <div className="experience-container ">
-        <div className="experience-left">
+      <div className="experience-container " onMouseEnter={handleMouseEnter} style={boxStyle}>
+        <div className="experience-left " style={{boxStyle,background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}}>
           <h3>Frontend Development</h3>
-          <div className="experience-content">
+          <div className="experience-content" onMouseEnter={handleMouseEnter} >
             {experienceDataFrontend.map((data) => (
               <article className="experience-details">
                 <img src={data.image} />
@@ -38,9 +57,11 @@ const Experience = () => {
             ))}
           </div>
         </div>
-        <div className="experience-backend">
+        <div className="experience-backend"  style={{boxStyle,background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}} 
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
           <h3>Backend Development</h3>
-          <div className="experience-content">
+          <div className="experience-content" >
             {experienceDataBackend.map((data) => (
               <article className="experience-details">
                 <img src={data.image} />

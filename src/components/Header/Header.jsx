@@ -1,13 +1,21 @@
-import React from "react";
+import {React,useContext} from "react";
 import { TypeAnimation } from "react-type-animation";
 import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin} from 'react-icons/ai'
 import myImg from "../../assets/img/mypic.png";
 import glassesemoji from "../../assets/img/glassesimoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import CTA from "./CTA";
+import { themeContext } from "../../context";
+import { motion } from "framer-motion";
+
 import "./header.css";
 
+
 const Header = () => {
+  const transition = { duration: 1, typeof: "spring" };
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className=" container header" id="Home">
       <div className="header-left ">
@@ -17,8 +25,7 @@ const Header = () => {
           </span>
           <b>I am a 
             {" "}
-            MERN stack developer
-            {/* <TypeAnimation
+            <TypeAnimation
               sequence={[
                 "MERN Stack Developer",
                 500,
@@ -28,9 +35,9 @@ const Header = () => {
                 500,
                 "Software Engineer",
               ]}
-              style={{color:"#4e45de"}}
+              style={{color:"var(--color-primary)"}}
               repeat={Infinity}
-            /> */}
+            />
             </b>
           <span>
             I’m a software developer and here is my portfolio website.
@@ -39,17 +46,17 @@ const Header = () => {
         </div>
         <CTA />
         <div className="i-icons">
-          <AiOutlineGithub style={{color:"black"} } className="social-icon-hover"/>
+          <AiOutlineGithub style={{color:darkMode?"var(--color-white)":"var(--color-black"}} className="social-icon-hover"/>
           <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" />
           <AiOutlineLinkedin style={{color:"#0077b5"}} className="social-icon-hover" />
         </div>
       </div>
       <div className="header-right">
         <img src={myImg} alt="" />
-         <img src={glassesemoji} alt=""/>
-        <div style={{ top: "-4%", left: "68%" }} className="floating-div">
+         <motion.img initial={{left:"-15%"}} whileInView={{left:'10%'}} transition={transition} src={glassesemoji} alt=""/>
+        <motion.div initial={{left:"50%",top:"-4%"}} whileInView={{left:"68%"}} transition={transition}   className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=96&id=108784&format=png"} title1="MERN Stack" title2={"Developer"} />
-        </div>
+        </motion.div>
         <div style={{ bottom: "10%", left: "10%" }} className="floating-div">
           <FloatingDiv img={"https://img.icons8.com/?size=160&id=gEUAVzkSqR4R&format=png"} title1="Web " title2={"Developer"} />
         </div>
