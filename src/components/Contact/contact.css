@@ -76,7 +76,15 @@
   #submit:hover{
     scale:0.9;
   }
-  
+  .map{
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+  }
+  .map iframe{
+    width: 100%;
+    border-radius: 1rem;
+  }
   
 
 /* -------------------------MEDIA QUERIES (MEDIUM DIVICES)------------------------- */

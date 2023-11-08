@@ -26,8 +26,8 @@
     --container-width-sm:90%;
 
     /* --box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79); */
-    --box-shadow: -2px 13px 26px 3px var(--color-primary);
-    --box-shadow-variant: -2px 13px 26px 3px #fff;
+    /* --box-shadow: -2px 5px 10px 3px var(--color-primary);
+    --box-shadow-variant: -2px 13px 26px 3px #fff; */
     
 }
 

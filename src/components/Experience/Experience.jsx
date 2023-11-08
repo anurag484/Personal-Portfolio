@@ -1,5 +1,4 @@
 import {React,useContext} from "react";
-import { BsGear, BsPatchCheckFill } from "react-icons/bs";
 import {
   experienceDataFrontend,
   experienceDataBackend,
@@ -8,10 +7,18 @@ import {
 import "./experience.css";
 import { themeContext } from "../../context";
 import { useState } from "react";
+import {motion} from "framer-motion";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const Experience = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const transition = { duration: 0.5, typeof: "spring" };
+
   const levelHandle = (data) => {
     if (data == 1) {
       return "Advance";
@@ -23,27 +30,13 @@ const Experience = () => {
       return "Familiar";
     }
   };
-  const [isHover, setIsHover] = useState(false);
-
-   const handleMouseEnter = () => {
-      setIsHover(true);
-   };
-
-   const handleMouseLeave = () => {
-      setIsHover(false);
-   };
-  const boxStyle = {
-    
-    backgroundColor: isHover ? '' : '',
-    color: isHover ? 'green' : '',
- };
   return (
     <div className="container" id="Experience" style={{background:darkMode?"var(--color-black)":""}}>
       <h1 style={{ textAlign: "center" }}>My Experience</h1>
-      <div className="experience-container " onMouseEnter={handleMouseEnter} style={boxStyle}>
-        <div className="experience-left " style={{boxStyle,background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}}>
+      <div  className="experience-container " >
+        <motion.div initial={{left:"-40%"}} whileInView={{left:"0%"}} className="experience-left " style={{background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}}>
           <h3>Frontend Development</h3>
-          <div className="experience-content" onMouseEnter={handleMouseEnter} >
+          <div className="experience-content" >
             {experienceDataFrontend.map((data) => (
               <article className="experience-details">
                 <img src={data.image} />
@@ -56,15 +49,13 @@ const Experience = () => {
               </article>
             ))}
           </div>
-        </div>
-        <div className="experience-backend"  style={{boxStyle,background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}} 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+        </motion.div>
+        <motion.div initial={{right:"-40%"}} whileInView={{right:"0%"}} className="experience-backend"  style={{background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}} >
           <h3>Backend Development</h3>
           <div className="experience-content" >
             {experienceDataBackend.map((data) => (
               <article className="experience-details">
-                <img src={data.image} />
+                <motion.img initial={{bottom:"-20%"}} whileHover={{color:"red"}} transition={transition} src={data.image} />
                 <div>
                   <h4>{data.title}</h4>
                   <small className="text-light">
@@ -74,19 +65,19 @@ const Experience = () => {
               </article>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="other-section">
         <h2 style={{ textAlign: "center" }}>Tools and Others</h2>
         <div className="other-section-child">
           {experienceOtherData.map((data) => (
-            <div className="">
+            <motion.div initial={{scale:"0.5"}} whileInView={{scale:"1"}} transition={transition} className="">
               <img
                 src={data.image}
                 alt=""
               />
               <span>{data.title}</span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

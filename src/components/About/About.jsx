@@ -14,17 +14,19 @@ import mysqlPng from "../../assets/img/mysqlpng.png";
 import expressPng from "../../assets/img/expresspng.png";
 import phpPng from "../../assets/img/phppng.png";
 import javaPng from "../../assets/img/javapng.png";
-
+import {motion} from "framer-motion"
 
 import "./about.css";
 const About = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const transition = { duration: 0.9, typeof: "spring" };
+
   return (
     <div className="container about" id="About">
       <h1 style={{ textAlign: "center" }}>About Me</h1>
       <div  class="skills-container ">
-        <div class="skill-container-left">
+        <motion.div initial={{translateX:"-20%"}} whileInView={{translateX:"0%"}} transition={transition} class="skill-container-left">
           <h2 class="skill-heading">
             <span class="caps">M</span>e and
             <br />
@@ -53,8 +55,8 @@ const About = () => {
               full-stack web development.
             </p>
           </div>
-        </div>
-        <div className="skill-container-right">
+        </motion.div>
+        <motion.div initial={{translateX:"20%"}} whileInView={{translateX:"0%"}} transition={transition} className="skill-container-right">
           <div className="con" style={{borderColor:darkMode?"var(--color-white)":""}} >
             <div className="icon">
               <div className="imgBox">
@@ -102,7 +104,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

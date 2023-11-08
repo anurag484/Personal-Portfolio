@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion"
 import "./testimonial.css";
 import { testimonial_data } from "../../utils/common-utils";
 // Import Swiper React components
@@ -12,9 +13,9 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 const Testimonials = () => {
   return (
-    <section id="testimonials">
+    <motion.section initial={{translateY:"40%"}} whileInView={{translateY:"0%"}} transition={{duration:0.5}}  id="testimonials">
       <h1 style={{textAlign:"center"}}>Testimonials</h1>
-      <Swiper className="container testimonials_container mySwiper" navigation={true} modules={[Navigation]} >
+      <Swiper  className="container testimonials_container mySwiper" navigation={true} modules={[Navigation]} >
         {testimonial_data.map(({ avatar, name, review }, index) => (
           <SwiperSlide key={index} className="testimonial">
             <div className="client_avatar">
@@ -25,7 +26,7 @@ const Testimonials = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </motion.section>
   );
 };
 

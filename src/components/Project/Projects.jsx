@@ -1,6 +1,6 @@
 import{ React,useContext} from "react";
 import { themeContext } from "../../context";
-
+import {motion} from "framer-motion"
 import "./project.css";
 import { projectsList } from "../../utils/common-utils";
 import projectImg from "../../assets/img/hi.png"
@@ -13,9 +13,9 @@ const Projects = () => {
       <h1 style={{textAlign:"center"}}>My Recents Projects</h1>
       <div className="project_container">
         {projectsList.map(({id,image,title,github,demo}) => (
-          <article key={id} className="project_items" style={{border:darkMode?"2px solid var(--color-white)":""}}>
+          <motion.article initial={{scale:0.5}} whileInView={{scale:1}} transition={{duration:0.3}} key={id} className="project_items" style={{border:darkMode?"2px solid var(--color-white)":""}}>
               <img src={projectImg} alt="" className="project_items-image" />
-            <h3>{title}</h3>
+            <motion.h3 initial={{left:"40px"}}>{title}</motion.h3>
             <div className="project_item_CTA">
               <a href={github} className="btn" target="_blank">
                 Github
@@ -28,7 +28,7 @@ const Projects = () => {
                 Live Demo
               </a>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </div>

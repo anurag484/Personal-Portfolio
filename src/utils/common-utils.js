@@ -124,6 +124,11 @@ export const experienceOtherData=[
         image:"https://w7.pngwing.com/pngs/578/816/png-transparent-java-class-file-java-platform-standard-edition-java-development-kit-java-runtime-environment-coffee-jar-text-class-orange-thumbnail.png",
         title:"Java",
     },
+    {
+        id:1,
+        image:"https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo-thumbnail.png",
+        title:"AWS",
+    },
 ]
 
 export const  projectsList=[
