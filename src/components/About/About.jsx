@@ -14,6 +14,8 @@ import mysqlPng from "../../assets/img/mysqlpng.png";
 import expressPng from "../../assets/img/expresspng.png";
 import phpPng from "../../assets/img/phppng.png";
 import javaPng from "../../assets/img/javapng.png";
+import Nextjs from "../../assets/img/nextjs.png"
+import ReduxImg from "../../assets/img/redux.png"
 import {motion} from "framer-motion"
 
 import "./about.css";
@@ -78,10 +80,10 @@ const About = () => {
                 <img src={jsImg} alt="" />
               </div>
               <div className="imgBox" >
-                <img src={skillpng} alt="" />
+                <img src={Nextjs} alt="" />
               </div>
               <div className="imgBox" >
-                <img src={skillpng} alt="" />
+                <img src={reduxImg} alt="" />
               </div>
               <div className="imgBox" >
                 <img src={skillpng} alt="" />

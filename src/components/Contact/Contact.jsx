@@ -41,7 +41,7 @@ const Contact = () => {
           <article className="contact_option">
             <BsWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=9412803911&text=Hi, Sameer I am " target='_blank'>Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=9412803911&text=Hi, Sameer I Want to hire you, you are interested to join our team " target='_blank'>Send a message</a>
           </article>
         </motion.div>
         <form  ref={form} class="form" onSubmit={sendEmail} >
