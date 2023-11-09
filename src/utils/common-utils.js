@@ -1,4 +1,10 @@
-const projectImg1="https://w7.pngwing.com/pngs/410/100/png-transparent-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-text-thumbnail.png"
+const EdtechProjectImg =require("../assets/projectsImg/edtech.png")
+const BlogAppProjectImg=require("../assets/projectsImg/blog.png");
+const porfolioProject=require("../assets/projectsImg/portfolioProject.png");
+const videoConfrencingProject=require("../assets/projectsImg/videoConfrencingProject.png");
+const youtubeClone=require("../assets/projectsImg/youtubeClone.png");
+const weatherProject=require("../assets/projectsImg/weatherProject.png");
+const userImg="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png";
 
 export const experienceDataFrontend=[
     {
@@ -23,6 +29,12 @@ export const experienceDataFrontend=[
         id:4,
         image:"https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png",
         title:"React js",
+        level:4
+    },
+    {
+        id:4,
+        image:"https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png",
+        title:"Next js",
         level:4
     },
     {
@@ -87,6 +99,12 @@ export const experienceDataBackend=[
         title:"Java",
         level:4
     },
+    {
+        id:1,
+        image:"https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo-thumbnail.png",
+        title:"AWS",
+        level:4
+    },
 ]
 export const experienceOtherData=[
     {
@@ -134,45 +152,45 @@ export const experienceOtherData=[
 export const  projectsList=[
     {
         id:1,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
+        image:porfolioProject,
+        title:"My Personal Portfolio Website To Showcase My Expertize",
+        github:"https://github.com/Sameerkhan9412/Personal-Portfolio",
         demo:"xyx.com"
     },
     {
         id:2,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
-        demo:"xyx.com"
+        image:EdtechProjectImg,
+        title:"A Edtech Project (StudyByte) That Created Using MERN,",
+        github:"https://github.com/Sameerkhan9412/StudyByte",
+        demo:"https://studybyte.vercel.app/"
     },
     {
         id:3,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
-        demo:"xyx.com"
+        image:BlogAppProjectImg,
+        title:"Crafting Seamless Blogging Website with MERN for Your Next-gen!",
+        github:"https://github.com/Sameerkhan9412/BlogWebApp_Using_MERN_Stack",
+        demo:"https://blog-web-app-using-mern-stack.vercel.app"
     },
     {
         id:4,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
-        demo:"xyx.com"
+        image:videoConfrencingProject,
+        title:"Ultimate Video Conferencing Solution for Modern Collaboration!",
+        github:"https://github.com/Sameerkhan9412/VideoConferencingApp",
+        demo:"https://sam-videoconfrencing-app.vercel.app/"
     },
     {
         id:5,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
-        demo:"xyx.com"
+        image:youtubeClone,
+        title:"Youtube Clone , Ultimate Video Streaming Plateform",
+        github:"https://github.com/Sameerkhan9412/YouTube-Clone",
+        demo:"https://sameerkhan9412.github.io/YouTubeClone-with-js/"
     },
     {
         id:6,
-        image:projectImg1,
-        title:"Cryptoo Currency Dashbord & financial Visaulization",
-        github:"https://github.com",
-        demo:"xyx.com"
+        image:weatherProject,
+        title:"Realtime Weather Checker Website On Any Location",
+        github:"https://github.com/Sameerkhan9412/Weather-App",
+        demo:"https://sameerkhan9412.github.io/Weather-App/"
     },
 
 ]
@@ -181,28 +199,28 @@ export const  projectsList=[
 
 export const testimonial_data=[
     {
-        avatar:projectImg1,
+        avatar:userImg,
         name:"Sameer Khan",
-        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+        review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis autem provident cumque, iusto debitis Suscipit, error dolores, earum nemo quae reiciendis magni ipsa voluptates culpa, quam odit itaque blanditiis",
     },
     {
-        avatar:projectImg1,
+        avatar:userImg,
         name:"Suhail Khan",
-        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+        review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem vero, cupiditate placeat ipsam vitae voluptatem iste fugit? Praesentium quia ex voluptatem, exercitationem consectetur nisi, inventore dicta, quidem eos perspiciatis minima.",
     },
     {
-        avatar:projectImg1,
+        avatar:userImg,
         name:"arbazr Khan",
-        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+        review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil illo ullam eligendi corporis? Doloribus necessitatibus numquam recusandae sed? Repellat odit pariatur distinctio, architecto amet corporis! Iste dolores vero recusandae pariatur harum ullam quos corporis, reiciendis ipsum.",
     },
     {
-        avatar:projectImg1,
+        avatar:userImg,
         name:"neha Khan",
-        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+        review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas totam sit harum, eum provident officiis voluptates vero tempora asperiores fuga aspernatur animi recusandae beatae placeat rerum molestiae!",
     },
     {
-        avatar:projectImg1,
+        avatar:userImg,
         name:"shaheen Khan",
-        review:"samer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkdsamer khand malkd",
+        review:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, similique nihil? Voluptatem minima magnam natus, quo nulla saepe assumenda perspiciatis?",
     },
 ]

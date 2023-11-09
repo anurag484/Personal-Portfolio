@@ -9,6 +9,11 @@
     border-radius: 50%;
     margin: 0 auto 1rem;
     border: 0.4rem solid var(--color-primary);
+    object-fit: cover;
+}
+.client_avatar img{
+    width: 100%;
+    height: 100%;
 }
 .testimonial{
     background: var(--color-primary);

@@ -31,7 +31,6 @@
 .experience-container >div:hover{
     background: transparent;
     border: 3px dashed var(--color-primary);
-    cursor: default;
 }
 .experience-container>div:hover::before{
     height: 100%;
@@ -95,7 +94,6 @@
     display: flex;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
     
 }
 .other-section-child>div:hover{
