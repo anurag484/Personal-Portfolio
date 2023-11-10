@@ -7,13 +7,16 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import CTA from "./CTA";
 import { themeContext } from "../../context";
 import { motion } from "framer-motion";
+import { socialMediaLinks } from "../../utils/common-utils";
 
 import "./header.css";
 
 
 const Header = () => {
   const transition = { duration: 0.5, typeof: "spring" };
-
+  // const github ="https://github.com/Sameerkhan9412"
+  const github =socialMediaLinks;
+  console.log("hell",socialMediaLinks[0].Instagram)
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -21,10 +24,11 @@ const Header = () => {
       <motion.div initial={{left:"-20%"}} whileInView={{left:"0%"}} transition={transition}  className="header-left ">
         <div className="name">
           <span>
-            Hi! I'm  <b> Sameer</b>
+            Hi! I'm  <b style={{color:darkMode?"var(--color-primary-variant":""}}> Sameer</b>
           </span>
-          <b>I am a 
+          <span style={{fontWeight:900}}>I am a 
             {" "}
+            <b style={{color:darkMode?"var(--color-primary-variant)":""}}>
             <TypeAnimation
               sequence={[
                 "MERN Stack Developer",
@@ -35,10 +39,10 @@ const Header = () => {
                 500,
                 "Software Engineer",
               ]}
-              style={{color:"var(--color-primary)"}}
               repeat={Infinity}
             />
             </b>
+            </span>
           <span>
             I’m a software developer and here is my portfolio website.
             <br /> Here you’ll learn about my journey as a Website Developer.
@@ -46,9 +50,9 @@ const Header = () => {
         </div>
         <CTA />
         <div className="i-icons">
-          <AiOutlineGithub style={{color:darkMode?"var(--color-white)":"var(--color-black"}} className="social-icon-hover"/>
-          <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" />
-          <AiOutlineLinkedin style={{color:"#0077b5"}} className="social-icon-hover" />
+          <AiOutlineGithub style={{color:darkMode?"var(--color-white)":"var(--color-black"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].github)}/>
+          <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].Instagram)} />
+          <AiOutlineLinkedin style={{color:"#0077b5"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].Linkedin)} />
         </div>
       </motion.div>
       <div className="header-right">

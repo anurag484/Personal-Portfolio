@@ -1,4 +1,6 @@
-import React from 'react'
+import {React,useContext} from 'react'
+import { themeContext } from "../../context";
+
 import {motion}  from "framer-motion"
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
@@ -10,6 +12,10 @@ import { useRef } from 'react'
 
 import "./contact.css"
 const Contact = () => {
+  
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,9 +31,9 @@ const Contact = () => {
   };
     return (
     <div className='container' id='Contact'>
-      <h1 style={{textAlign:"center"}}>Contact Me</h1>
+      <h1 style={{textAlign:"center",color:darkMode?"var(--color-primary-variant)":""}}>Contact Me</h1>
       <div className="container contact_container">
-        <motion.div initial={{translateX:"-30%"}} whileInView={{translateX:"0%"}} transition={{duration:0.5}}  className="contact_options">
+        <motion.div initial={{translateX:"-30%"}} whileInView={{translateX:"0%"}} transition={{duration:0.5}}  className="contact_options"style={{background:darkMode?"var(--color-primary-variant)":""}}>
           <article className="contact_option">
             <MdOutlineEmail className='contact_option-icon'/>
             <h5>sameerkhann9412@gmail.com</h5>
@@ -58,7 +64,7 @@ const Contact = () => {
             </div>
 
             <div>
-            <motion.button initial={{translateX:"60%"}} whileInView={{translateX:"0%"}} transition={{duration:0.5}} type="submit" class="btn btn-primary" id="submit">
+            <motion.button initial={{translateX:"60%"}} whileInView={{translateX:"0%"}} transition={{duration:0.5}} type="submit" class="btn btn-primary" id="submit"style={{background:darkMode?"var(--color-primary-variant)":"",border:darkMode?"2px solid var(--color-primary-variant)":""}}>
                 Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
               </motion.button>
             </div>

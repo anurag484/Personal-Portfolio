@@ -1,9 +1,13 @@
-import React from 'react'
+import {React,useContext} from 'react'
+import { themeContext } from "../../context";
+
 import {FiInstagram,FiFacebook,FiTwitter} from 'react-icons/fi'
 import './footer.css'
 const Footer = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <footer className=''>
+    <footer className='' style={{background:darkMode?"var(--color-primary-variant)":""}}>
       <a href="#" className='footer_logo'>Sameer Khan</a>
       <ul className='permalinks'>
         <li><a href="#Home">Home</a></li>

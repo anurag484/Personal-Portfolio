@@ -26,10 +26,10 @@ const About = () => {
 
   return (
     <div className="container about" id="About">
-      <h1 style={{ textAlign: "center" }}>About Me</h1>
+      <h1 style={{color:darkMode?"var(--color-primary-variant)":"", textAlign: "center" }}>About Me</h1>
       <div  class="skills-container ">
         <motion.div initial={{translateX:"-20%"}} whileInView={{translateX:"0%"}} transition={transition} class="skill-container-left">
-          <h2 class="skill-heading">
+          <h2 style={{color:darkMode?"var(--color-primary-variant)":""}} class="skill-heading">
             <span class="caps">M</span>e and
             <br />
             MyTech Stack
