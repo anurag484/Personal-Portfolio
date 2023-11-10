@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
 }
 .skill-heading{
-    color: blue;
+    color: var(--color-primary);
     font-size: 2rem;
     line-height: 1;
 }

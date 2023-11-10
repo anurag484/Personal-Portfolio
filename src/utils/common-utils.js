@@ -5,6 +5,12 @@ const videoConfrencingProject=require("../assets/projectsImg/videoConfrencingPro
 const youtubeClone=require("../assets/projectsImg/youtubeClone.png");
 const weatherProject=require("../assets/projectsImg/weatherProject.png");
 const userImg="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png";
+export const socialMediaLinks=[{
+    Linkedin:"https://www.linkedin.com/in/sameerkhn/",
+    github:"https://github.com/Sameerkhan9412",
+    Instagram:"https://www.instagram.com/sameer_khan_oficial"
+}
+]
 
 export const experienceDataFrontend=[
     {

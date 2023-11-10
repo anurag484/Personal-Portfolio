@@ -12,10 +12,10 @@ const Toggle = () => {
     theme.dispatch({type:'toggle'})
   } 
   return (
-    <div className="toggle"onClick={handleClick} >
+    <div style={{border:darkMode?"2px solid var(--color-primary-variant)":""}} className="toggle"onClick={handleClick} >
       <Moon style={{color:"black"}}/>
       <Sun style={{color:"rgb(232 230 227)"}}/>
-      <div className="t-button" style={darkMode?{left:'2px'}:{right:'2px'}} >
+      <div className="t-button"  style={{left:darkMode?"2px":"",right:darkMode?"":"2px",background:darkMode?"var(--color-primary-variant)":""}} >
       </div>
     </div>
   )
