@@ -161,7 +161,7 @@ export const  projectsList=[
         image:porfolioProject,
         title:"My Personal Portfolio Website To Showcase My Expertize",
         github:"https://github.com/Sameerkhan9412/Personal-Portfolio",
-        demo:"xyx.com"
+        demo:"https://portfoliobysameer.vercel.app/"
     },
     {
         id:2,
@@ -169,6 +169,14 @@ export const  projectsList=[
         title:"A Edtech Project (StudyByte) That Created Using MERN,",
         github:"https://github.com/Sameerkhan9412/StudyByte",
         demo:"https://studybyte.vercel.app/"
+    },
+    
+    {
+        id:5,
+        image:youtubeClone,
+        title:"Youtube Clone , Ultimate Video Streaming Plateform Using React",
+        github:"https://github.com/Sameerkhan9412/YouTube-Clone",
+        demo:"https://sameerkhan9412.github.io/YouTubeClone-with-js/"
     },
     {
         id:3,
@@ -183,13 +191,6 @@ export const  projectsList=[
         title:"Ultimate Video Conferencing Solution for Modern Collaboration!",
         github:"https://github.com/Sameerkhan9412/VideoConferencingApp",
         demo:"https://sam-videoconfrencing-app.vercel.app/"
-    },
-    {
-        id:5,
-        image:youtubeClone,
-        title:"Youtube Clone , Ultimate Video Streaming Plateform",
-        github:"https://github.com/Sameerkhan9412/YouTube-Clone",
-        demo:"https://sameerkhan9412.github.io/YouTubeClone-with-js/"
     },
     {
         id:6,

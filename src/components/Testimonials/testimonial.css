@@ -26,7 +26,7 @@
     font-size:2rem;
 }
 .client_review{
-    color: rgba(255,255,255,0.6);
+    color: rgb(255, 255, 255);
     font-weight: 300;
     display: block;
     width: 80%;

@@ -1,5 +1,5 @@
 import {React,useContext} from "react";
-import {motion} from "framer-motion"
+import {color, motion} from "framer-motion"
 import "./testimonial.css";
 import { testimonial_data } from "../../utils/common-utils";
 import { themeContext } from "../../context";
@@ -26,7 +26,7 @@ const Testimonials = () => {
             <div className="client_avatar" >
               <img src={avatar} alt="client avatar1" />
             </div>
-            <h5>{name}</h5>
+            <h5 style={{color:"white"}}>{name}</h5>
             <small className="client_review">{review}</small>
           </SwiperSlide>
         ))}
