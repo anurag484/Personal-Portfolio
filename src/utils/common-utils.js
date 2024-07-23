@@ -175,8 +175,8 @@ export const  projectsList=[
         id:5,
         image:youtubeClone,
         title:"Youtube Clone , Ultimate Video Streaming Plateform Using React",
-        github:"https://github.com/Sameerkhan9412/YouTube-Clone",
-        demo:"https://sameerkhan9412.github.io/YouTubeClone-with-js/"
+        github:"https://github.com/Sameerkhan9412/Youtube-Clone-Using-React",
+        demo:"https://samtube-youtube-clone.vercel.app/"
     },
     {
         id:3,
