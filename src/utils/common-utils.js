@@ -1,14 +1,20 @@
-const EdtechProjectImg =require("../assets/projectsImg/edtech.png")
-const BlogAppProjectImg=require("../assets/projectsImg/blog.png");
+const chatbot =require("../assets/projectsImg/chatbot.png")
+const attendance=require("../assets/projectsImg/attendance.jpg");
 const porfolioProject=require("../assets/projectsImg/portfolioProject.png");
 const videoConfrencingProject=require("../assets/projectsImg/videoConfrencingProject.png");
 const youtubeClone=require("../assets/projectsImg/youtubeClone.png");
 const weatherProject=require("../assets/projectsImg/weatherProject.png");
+const BlogAppProjectImg=require("../assets/projectsImg/blog.png");
+const food=require("../assets/projectsImg/food.jpg");
+const algorithm=require("../assets/projectsImg/algorithm.jpg");
+const games=require("../assets/projectsImg/games.png");
 const userImg="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png";
+
 export const socialMediaLinks=[{
-    Linkedin:"https://www.linkedin.com/in/sameerkhn/",
-    github:"https://github.com/Sameerkhan9412",
-    Instagram:"https://www.instagram.com/sameer_khan_oficial"
+    Linkedin:"https://www.linkedin.com/in/anurag-ruwali-8b5439222/",
+    github:"https://github.com/anurag484",
+    leetcode: "https://leetcode.com/u/anuragruwali484/",
+    gfg: "https://www.geeksforgeeks.org/user/anuragruamqv/", 
 }
 ]
 
@@ -17,25 +23,25 @@ export const experienceDataFrontend=[
         id:1,
         image:"https://w7.pngwing.com/pngs/410/100/png-transparent-web-development-html-responsive-web-design-logo-javascript-html-angle-web-design-text-thumbnail.png",
         title:"HTMl",
-        level:4
+        level:1
     },
     {
         id:2,
         image:"https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png",
         title:"CSS",
-        level:4
+        level:1
     },
     {
         id:3,
         image:"https://w7.pngwing.com/pngs/793/545/png-transparent-javascript-programmer-node-js-web-application-markup-language-thumbnail.png",
         title:"Javacript",
-        level:4
+        level:1
     },
     {
         id:4,
         image:"https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png",
         title:"React js",
-        level:4
+        level:2
     },
     {
         id:4,
@@ -43,12 +49,12 @@ export const experienceDataFrontend=[
         title:"Next js",
         level:4
     },
-    {
-        id:4,
-        image:"https://w7.pngwing.com/pngs/669/447/png-transparent-redux-react-javascript-freecodecamp-npm-others-miscellaneous-purple-violet-thumbnail.png",
-        title:"Redux Toolkit",
-        level:4
-    },
+    // {
+    //     id:4,
+    //     image:"https://w7.pngwing.com/pngs/669/447/png-transparent-redux-react-javascript-freecodecamp-npm-others-miscellaneous-purple-violet-thumbnail.png",
+    //     title:"Redux Toolkit",
+    //     level:4
+    // },
     {
         id:1,
         image:"https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png",
@@ -59,7 +65,7 @@ export const experienceDataFrontend=[
         id:1,
         image:"https://w7.pngwing.com/pngs/104/793/png-transparent-bootstrap-hd-logo-thumbnail.png",
         title:"Bootstap",
-        level:4
+        level:2
     },
 ]
 export const experienceDataBackend=[
@@ -73,7 +79,7 @@ export const experienceDataBackend=[
         id:2,
         image:"https://w7.pngwing.com/pngs/768/167/png-transparent-mongodb-nosql-document-oriented-database-nosql-icon-leaf-grass-business-thumbnail.png",
         title:"MongoDB",
-        level:4
+        level:2
     },
     {
         id:3,
@@ -91,7 +97,7 @@ export const experienceDataBackend=[
         id:4,
         image:"https://w7.pngwing.com/pngs/385/582/png-transparent-mysql-workbench-macos-bigsur-icon-thumbnail.png",
         title:"MySQL",
-        level:4
+        level:2
     },
     {
         id:1,
@@ -103,14 +109,14 @@ export const experienceDataBackend=[
         id:1,
         image:"https://w7.pngwing.com/pngs/578/816/png-transparent-java-class-file-java-platform-standard-edition-java-development-kit-java-runtime-environment-coffee-jar-text-class-orange-thumbnail.png",
         title:"Java",
-        level:4
+        level:2
     },
-    {
-        id:1,
-        image:"https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo-thumbnail.png",
-        title:"AWS",
-        level:4
-    },
+    // {
+    //     id:1,
+    //     image:"https://w7.pngwing.com/pngs/555/220/png-transparent-aws-hd-logo-thumbnail.png",
+    //     title:"AWS",
+    //     level:4
+    // },
 ]
 export const experienceOtherData=[
     {
@@ -161,43 +167,43 @@ export const  projectsList=[
         image:porfolioProject,
         title:"My Personal Portfolio Website To Showcase My Expertize",
         github:"https://github.com/Sameerkhan9412/Personal-Portfolio",
-        demo:"https://portfoliobysameer.vercel.app/"
+        // demo:"https://portfoliobysameer.vercel.app/"
     },
     {
         id:2,
-        image:EdtechProjectImg,
-        title:"A Edtech Project (StudyByte) That Created Using MERN,",
-        github:"https://github.com/Sameerkhan9412/StudyByte",
-        demo:"https://studybyte.vercel.app/"
+        image:chatbot,
+        title:"Chatbot for Helping Stressed People",
+        github:"https://github.com/anurag484/Chatbot-to-help-stressed-people",
+        // demo:"https://studybyte.vercel.app/"
     },
     
     {
         id:5,
-        image:youtubeClone,
-        title:"Youtube Clone , Ultimate Video Streaming Plateform Using React",
-        github:"https://github.com/Sameerkhan9412/Youtube-Clone-Using-React",
-        demo:"https://samtube-youtube-clone.vercel.app/"
+        image:attendance,
+        title:"Real-Time Face Attendance System",
+        github:"https://github.com/anurag484/real-time-attendance",
+        // demo:"https://samtube-youtube-clone.vercel.app/"
     },
     {
         id:3,
-        image:BlogAppProjectImg,
-        title:"Crafting Seamless Blogging Website with MERN for Your Next-gen!",
-        github:"https://github.com/Sameerkhan9412/BlogWebApp_Using_MERN_Stack",
-        demo:"https://blog-web-app-using-mern-stack.vercel.app"
+        image:food,
+        title:"Online Food Ordering Website",
+        github:"https://github.com/anurag484/food-delivery",
+        // demo:"https://blog-web-app-using-mern-stack.vercel.app"
     },
     {
         id:4,
-        image:videoConfrencingProject,
-        title:"Ultimate Video Conferencing Solution for Modern Collaboration!",
-        github:"https://github.com/Sameerkhan9412/VideoConferencingApp",
-        demo:"https://sam-videoconfrencing-app.vercel.app/"
+        image:algorithm,
+        title:"Algorithm Visualizer",
+        github:"https://github.com/anurag484/AlgorithmVisualizer",
+        // demo:"https://sam-videoconfrencing-app.vercel.app/"
     },
     {
         id:6,
-        image:weatherProject,
-        title:"Realtime Weather Checker Website On Any Location",
-        github:"https://github.com/Sameerkhan9412/Weather-App",
-        demo:"https://sameerkhan9412.github.io/Weather-App/"
+        image:games,
+        title:"C++ Arcade: A Mixed Bag of Games",
+        github:"https://github.com/anurag484/Gaming-in-cpp",
+        // demo:"https://sameerkhan9412.github.io/Weather-App/"
     },
 
 ]
@@ -207,27 +213,27 @@ export const  projectsList=[
 export const testimonial_data=[
     {
         avatar:userImg,
-        name:"Sameer Khan",
+        name:"Anurag Ruwali",
         review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis autem provident cumque, iusto debitis Suscipit, error dolores, earum nemo quae reiciendis magni ipsa voluptates culpa, quam odit itaque blanditiis",
     },
     {
         avatar:userImg,
-        name:"Suhail Khan",
+        name:"Diksha Chauhan",
         review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem vero, cupiditate placeat ipsam vitae voluptatem iste fugit? Praesentium quia ex voluptatem, exercitationem consectetur nisi, inventore dicta, quidem eos perspiciatis minima.",
     },
     {
         avatar:userImg,
-        name:"arbazr Khan",
+        name:"Kaushal Bhatt",
         review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil illo ullam eligendi corporis? Doloribus necessitatibus numquam recusandae sed? Repellat odit pariatur distinctio, architecto amet corporis! Iste dolores vero recusandae pariatur harum ullam quos corporis, reiciendis ipsum.",
     },
     {
         avatar:userImg,
-        name:"neha Khan",
+        name:"Lalit Dumka",
         review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas totam sit harum, eum provident officiis voluptates vero tempora asperiores fuga aspernatur animi recusandae beatae placeat rerum molestiae!",
     },
     {
         avatar:userImg,
-        name:"shaheen Khan",
+        name:"Mayank Joshi",
         review:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, similique nihil? Voluptatem minima magnam natus, quo nulla saepe assumenda perspiciatis?",
     },
 ]

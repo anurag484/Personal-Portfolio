@@ -36,25 +36,13 @@ const About = () => {
           </h2>
           <div class="skill-subHeading">
             <p>
-              Hi Everyone, I am Sameer , As a fresher MERN stack web
-              developer, I possess a strong foundation in JavaScript, React,
-              Node.js, and MongoDB, eager to contribute and learn in a
-              collaborative team environment.
+            Hello! I’m Anurag, a passionate Frontend Developer with a strong foundation in the MERN stack (MongoDB, Express.js, React.js, Node.js). With a keen eye for detail and a love for crafting seamless user experiences, I enjoy turning complex problems into simple, beautiful solutions. My journey in web development has equipped me with the skills to build responsive, high-performance applications that delight users and meet business needs.
             </p>
             <p>
-              As a fresher MERN stack web developer, I bring a passion for
-              creating innovative and user-friendly web applications. With a
-              solid foundation in HTML, CSS, and JavaScript, I have honed my
-              skills in building dynamic and responsive websites.
+            Recently, I’ve ventured into the exciting world of machine learning, where I’m exploring how to integrate intelligent features into my applications. This new focus allows me to leverage data to enhance user experiences, automate processes, and provide insightful analytics. I believe that the intersection of web development and machine learning opens up endless possibilities, and I’m eager to continue expanding my knowledge and expertise in this field.
             </p>
             <p>
-              I am well-versed in the MERN stack, comprising MongoDB,
-              Express.js, React.js, and Node.js, and have a strong understanding
-              of RESTful APIs. I thrive in collaborative environments and
-              possess excellent problem-solving abilities. Committed to
-              continuous learning, I am eager to contribute my knowledge and
-              enthusiasm to a dynamic team, while further expanding my skills in
-              full-stack web development.
+            When I’m not coding, you can find me working on personal projects, or staying updated with the latest tech trends. I’m always on the lookout for opportunities to collaborate and create innovative solutions that push the boundaries of technology.
             </p>
           </div>
         </motion.div>

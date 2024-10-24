@@ -8,13 +8,14 @@ import CTA from "./CTA";
 import { themeContext } from "../../context";
 import { motion } from "framer-motion";
 import { socialMediaLinks } from "../../utils/common-utils";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 import "./header.css";
 
 
 const Header = () => {
   const transition = { duration: 0.5, typeof: "spring" };
-  // const github ="https://github.com/Sameerkhan9412"
   const github =socialMediaLinks;
   console.log("hell",socialMediaLinks[0].Instagram)
   const theme = useContext(themeContext);
@@ -24,7 +25,7 @@ const Header = () => {
       <motion.div initial={{left:"-20%"}} whileInView={{left:"0%"}} transition={transition}  className="header-left ">
         <div className="name">
           <span>
-            Hi! I'm  <b style={{color:darkMode?"var(--color-primary-variant":""}}> Sameer</b>
+            Hi! I'm  <b style={{color:darkMode?"var(--color-primary-variant":""}}> Anurag</b>
           </span>
           <span style={{fontWeight:900}}>I am a 
             {" "}
@@ -38,6 +39,8 @@ const Header = () => {
                 "Backend Developer",
                 500,
                 "Software Engineer",
+                500,
+                "Machine Learning Enthusiast",
               ]}
               repeat={Infinity}
             />
@@ -50,8 +53,18 @@ const Header = () => {
         </div>
         <CTA />
         <div className="i-icons">
+        <SiGeeksforgeeks
+        style={{ color: "#00A000" }} // Customize the color as needed
+        className="social-icon-hover" 
+        onClick={() => window.open(socialMediaLinks[0].gfg)} 
+         />
+        <SiLeetcode
+           style={{ color: "#f79e1b" }} // Customize the color as needed
+           className="social-icon-hover" 
+           onClick={() => window.open(socialMediaLinks[0].leetcode)} 
+          />
           <AiOutlineGithub style={{color:darkMode?"var(--color-white)":"var(--color-black"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].github)}/>
-          <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].Instagram)} />
+          {/* <AiOutlineInstagram style={{color:"#DD2A7B"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].Instagram)} /> */}
           <AiOutlineLinkedin style={{color:"#0077b5"}} className="social-icon-hover" onClick={()=>window.open(socialMediaLinks[0].Linkedin)} />
         </div>
       </motion.div>

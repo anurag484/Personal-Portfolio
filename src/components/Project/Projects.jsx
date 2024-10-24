@@ -19,14 +19,14 @@ const Projects = () => {
               <a href={github} className="btn" style={{color:darkMode?"var(--color-primary-variant)":"",border:darkMode?"2px solid var(--color-primary-variant)":""}} target="_blank">
                 Github
               </a>
-              <a
+              {/* <a
                 href={demo}
                 className="btn btn-primary "
                 target="_blank"
                 style={{background:darkMode?"var(--color-primary-variant)":"",border:darkMode?"2px solid var(--color-primary-variant)":""}}
               >
                 Live Demo
-              </a>
+              </a> */}
             </div>
           </motion.article>
         ))}

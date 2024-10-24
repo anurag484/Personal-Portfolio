@@ -10,7 +10,7 @@ const Navbar1 = () => {
  
   return (
     <div className="container" id="Navbar" style={{color:darkMode?"var(--color-black)":""}}>
-      <div className="nav-name" > <ImCool/>Sameer Khan</div>
+      <div className="nav-name" > <ImCool/>Anurag Ruwali</div>
       < Toggle />
     </div>
   );

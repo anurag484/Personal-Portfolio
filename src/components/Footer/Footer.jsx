@@ -8,7 +8,7 @@ const Footer = () => {
   const darkMode = theme.state.darkMode;
   return (
     <footer className='' style={{background:darkMode?"var(--color-primary-variant)":""}}>
-      <a href="#" className='footer_logo'>Sameer Khan</a>
+      <a href="#" className='footer_logo'>Anurag Ruwali</a>
       <ul className='permalinks'>
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
@@ -23,7 +23,7 @@ const Footer = () => {
         <a href="https://twitter.com"><FiTwitter/></a>
       </div>
       <div className="footer_copyright">
-        <small>&copy; Sameer Khan. All rights reserved.</small>
+        <small>&copy; Anurag Ruwali. All rights reserved.</small>
       </div>
     </footer>
   )

@@ -5,6 +5,7 @@ import {motion}  from "framer-motion"
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import {AiOutlineFacebook} from 'react-icons/ai'
+import { AiOutlineLinkedin } from 'react-icons/ai';
 import emailjs from 'emailjs-com'
 
 import { useRef } from 'react'
@@ -36,18 +37,20 @@ const Contact = () => {
         <motion.div initial={{translateX:"-30%"}} whileInView={{translateX:"0%"}} transition={{duration:0.5}}  className="contact_options"style={{background:darkMode?"var(--color-primary-variant)":""}}>
           <article className="contact_option">
             <MdOutlineEmail className='contact_option-icon'/>
-            <h5>sameerkhann9412@gmail.com</h5>
-            <a href="mailto:sameerkhann9412@gmail.com" target='_blank'>Send a message</a>
+            <h5>anuragruwali484@gmail.com</h5>
+            <a href="mailto:anuragruwali484@gmail.com" target='_blank'>Send a message</a>
           </article>
           <article className="contact_option">
-            <AiOutlineFacebook className='contact_option-icon'/>
-            <h4>Messenger</h4>
-            <a href="https://m.me/sameer" target='_blank'>Send a message</a>
+           <AiOutlineLinkedin className='contact_option-icon'/> {/* LinkedIn icon */}
+           <h4>LinkedIn</h4>
+           <a href="https://www.linkedin.com/in/anurag-ruwali-8b5439222/" target='_blank' rel='noreferrer'> 
+           Connect with me on LinkedIn
+           </a>
           </article>
           <article className="contact_option">
             <BsWhatsapp className='contact_option-icon'/>
             <h4>WhatsApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=9412803911&text=Hi, Sameer I Want to hire you, you are interested to join our team " target='_blank'>Send a message</a>
+            <a href="https://wa.me/919027811797?text=Hi, Anurag I Want to hire you, you are interested to join our team " target='_blank'>Send a message</a>
           </article>
         </motion.div>
         <form  ref={form} class="form" onSubmit={sendEmail} >
@@ -72,8 +75,17 @@ const Contact = () => {
           </form>
       </div>
       <div className="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112827.72286443967!2d78.00627559254278!3d27.906074741674395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a48686459c8b%3A0x95d967276d323613!2sAligarh%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1699441408090!5m2!1sen!2sin" width={600} height={450} style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55709.54299771221!2d79.527936!3d29.228071099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1729453264397!5m2!1sen!2sin" 
+  width="600" 
+  height="450" 
+  style={{ border: 0 }} // Changed this line
+  allowFullScreen 
+  loading="lazy" 
+  referrerPolicy="no-referrer-when-downgrade">
+</iframe>
+
+     </div>
     </div>
   )
 }
