@@ -1,13 +1,9 @@
 const chatbot =require("../assets/projectsImg/chatbot.png")
 const attendance=require("../assets/projectsImg/attendance.jpg");
-const porfolioProject=require("../assets/projectsImg/portfolioProject.png");
-const videoConfrencingProject=require("../assets/projectsImg/videoConfrencingProject.png");
-const youtubeClone=require("../assets/projectsImg/youtubeClone.png");
-const weatherProject=require("../assets/projectsImg/weatherProject.png");
-const BlogAppProjectImg=require("../assets/projectsImg/blog.png");
 const food=require("../assets/projectsImg/food.jpg");
 const algorithm=require("../assets/projectsImg/algorithm.jpg");
 const games=require("../assets/projectsImg/games.png");
+const portfolio=require("../assets/projectsImg/image.jpg.png");
 const userImg="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png";
 
 export const socialMediaLinks=[{
@@ -164,9 +160,9 @@ export const experienceOtherData=[
 export const  projectsList=[
     {
         id:1,
-        image:porfolioProject,
+        image:portfolio,
         title:"My Personal Portfolio Website To Showcase My Expertize",
-        github:"https://github.com/Sameerkhan9412/Personal-Portfolio",
+        github:"https://github.com/anurag484/personal-portfolio",
         // demo:"https://portfoliobysameer.vercel.app/"
     },
     {
